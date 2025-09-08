@@ -34,17 +34,18 @@ export default function Hero() {
         Cloud & DevOps Engineer | AWS Certified
       </motion.p>
 
-      {/* ✅ Fixed Resume Download */}
+      {/* ✅ View Resume from Google Drive */}
       <motion.a
-        href="/Sakthi Resume Cloud.pdf"
-        download
+        href="https://drive.google.com/file/d/1-HOrj98P1bwUKTuwfYVIgURqS8f57nV_/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.6 }}
         whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300"
+        className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300"
       >
-        Download Resume
+        View Resume
       </motion.a>
 
       {/* Subtle professional tagline */}
