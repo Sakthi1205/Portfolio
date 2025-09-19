@@ -15,4 +15,13 @@ export const projects = [
     tech: ["AWS S3", "Terraform", "Node.js"],
     github: "https://github.com/Sakthi1205/secure-file-upload-system",
   },
+  {
+  title: "Containerized Portfolio Deployment",
+  problem: "Difficulty in showcasing projects with a scalable and reliable hosting setup.",
+  approach: "Dockerized personal portfolio and deployed it on Kubernetes (Minikube) using NodePort service.",
+  outcome: "Achieved smooth local deployment and browser access via Kubernetes service.",
+  tech: ["Docker", "Kubernetes", "Minikube", "NodePort"],
+  github: "https://github.com/Sakthi1205/Portfolio",
+},
+
 ];
