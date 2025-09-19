@@ -1,12 +1,59 @@
-# React + Vite
+# Containerized Portfolio Deployment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website deployed using **Docker** and **Kubernetes** to showcase projects in a scalable and production-like environment.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Problem:**  
+Difficulty in showcasing projects with a scalable and reliable hosting setup.
 
-## Expanding the ESLint configuration
+**Approach:**  
+Dockerized a personal portfolio and deployed it on a Kubernetes cluster (Minikube) using a NodePort service.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Outcome:**  
+Achieved smooth local deployment with browser access through Kubernetes service, enabling a production-like environment for testing and showcasing projects.
+
+---
+
+## 🛠️ Tech Stack
+- **Docker** – Containerized the portfolio application  
+- **Kubernetes** – Managed deployment and services  
+- **Minikube** – Local Kubernetes cluster for testing  
+- **NodePort** – Exposed the application for browser access  
+
+---
+
+## 📂 Project Structure
+
+
+
+
+---
+
+## ⚡ How to Run Locally
+
+1. **Clone the repository**
+   
+git clone https://github.com/Sakthi1205/Portfolio.git
+cd sakthi-portfolio
+
+2. **Build Docker image**
+
+docker build -t sakthi-portfolio:v1 .
+
+
+3. **Run Minikube**
+
+minikube start
+
+
+4.**Deploy on Kubernetes**
+
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+
+5. **Access Portfolio**
+
+minikube service portfolio-service
+
